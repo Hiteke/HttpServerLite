@@ -468,7 +468,7 @@ namespace HttpServerLite
                 {
                     #region Subsequent-Line
 
-                    string[] headerLine = headers[i].Split(':');
+                    string[] headerLine = headers[i].Split(": ");
                     if (headerLine.Length == 2)
                     {
                         string key = headerLine[0].Trim();
